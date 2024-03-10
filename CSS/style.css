@@ -302,6 +302,8 @@ main section.section-8 div.section-content-8 div.course-program-grid div.module{
     padding-bottom: 10.72px;
     width: 186px;
     box-shadow: 0.5791667103767395px 0.5791667103767395px 8.6875px 0px #00000040;
+    transition: transform 0.5s;
+    transition: 0.5s;
 }
 
 main section.section-8 div.section-content-8 div.course-program-grid div.module img{
@@ -323,6 +325,12 @@ main section.section-8 div.section-content-8 div.course-program-grid div.module 
     margin-left: 8.85px;
 }
 
+main section.section-8 div.section-content-8 div.course-program-grid div.module:hover{
+    transform: translateY(-10px);
+    -webkit-box-shadow:10px 10px 100px -25px rgba(0,0,0,0.75);
+    -moz-box-shadow:10px 10px 100px -25px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 100px -25px rgba(0,0,0,0.75);
+}
 /*section-9*/
 
 main section.section-9{
@@ -1296,6 +1304,9 @@ footer div.footer-content ul.contacts li a img {
         width: 400px;
     }
     
+    main section.section-8 div.section-content-8 div.course-program-grid div.module:hover{
+        transform: translateY(-25px);
+    }
     
     
     /*    SECTION-9    */
