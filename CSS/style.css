@@ -325,12 +325,13 @@ main section.section-8 div.section-content-8 div.course-program-grid div.module 
     margin-left: 8.85px;
 }
 
-main section.section-8 div.section-content-8 div.course-program-grid div.module:hover{
+main section.section-8 div.section-content-8 div.course-program-grid div.module:hover {
     transform: translateY(-10px);
-    -webkit-box-shadow:10px 10px 100px -25px rgba(0,0,0,0.75);
-    -moz-box-shadow:10px 10px 100px -25px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 100px -25px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 100px -25px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 100px -25px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 100px -25px rgba(0,0,0,0.75);
 }
+
 /*section-9*/
 
 main section.section-9{
@@ -445,38 +446,38 @@ footer div.footer-content{
     padding:23.3px 0px 10px 56px;
 }
 
-footer div.footer-content img{
+footer div.footer-content div.main-info-footer div.icon-and-social img{
     width: 53.59px;
     height: 31.69px;
 }
 
-footer div.footer-content ul.social-media{
+footer div.footer-content div.main-info-footer div.icon-and-social ul.social-media{
     display: flex;
     gap:8.39px;
     margin-bottom: 40px;
 }
 
-footer div.footer-content ul.social-media li a img{
+footer div.footer-content div.main-info-footer div.icon-and-social ul.social-media li a img{
    width: 16px;
 }
 
-footer div.footer-content ul.contacts{
+footer div.footer-content div.main-info-footer div.contacts ul.contacts{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap:10px;
     margin-bottom: 49px;
 }
-footer div.footer-content ul.contacts li{
+footer div.footer-content div.main-info-footer div.contacts ul.contacts li{
     display: flex;
 }
 
-footer div.footer-content ul.contacts li p{
+footer div.footer-content div.main-info-footer div.contacts ul.contacts li p{
     font-size: 12px;
     line-height: 12px;
 }
 
-footer div.footer-content ul.contacts li img{
+footer div.footer-content div.main-info-footer div.contacts ul.contacts li img{
     width: 12.58px;
     height: 12.58px;
     margin-right: 8.39px;
@@ -498,9 +499,14 @@ footer div.footer-content ul.contacts li img{
 
 /*     TABLET   CSS    ADAPTIVE    */
 
-@media screen and (min-width: 991px) and (max-width: 1280px){
+@media screen and (min-width: 768px) and (max-width: 1280px){
+
+
+    
 body {
     font-size: 12px;
+    width: 100%;
+
 }
 
 /*       СТИЛЬ ХЭДЭРА       */
@@ -508,7 +514,6 @@ body {
 header {
     padding: 22px 700px 0px 70px;
     width: 100%;
-    
 }
 
 header a img {
@@ -530,6 +535,7 @@ main section.section-1 div.section-content-1{
 
 main section.section-1 div.section-content-1 ul {
     gap:14px;
+
 }
 
 main section.section-1 div.section-content-1 ul li {
@@ -807,7 +813,6 @@ main section.section-8 div.section-content-8 div.course-program-grid div.module 
 }
 
 
-
 /*    SECTION-9    */
 
 main section.section-9 {
@@ -819,8 +824,7 @@ main section.section-9 {
 main section.section-9 div.section-content-9 h2{
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 39px;
-    max-width:600px;
+    margin-bottom: 39px
 }
 
 main section.section-9 div.section-content-9 div.review{
@@ -921,43 +925,45 @@ footer{
 footer div.footer-content {
     display: flex;
     flex-direction: column;
-    padding: 29px 70px 13px 70px;
-    position: relative;
+    padding: 29px 90px 13px 70px;
     gap: 17px;
     width: 100%;
     
 }
 
-footer div.footer-content img {
+footer div.footer-content div.main-info-footer {
+    display: flex;
+    gap: 72%;
+}
+
+footer div.footer-content div.main-info-footer div.icon-and-social img {
     width: 66px;
     height: 39px;
 }
 
-footer div.footer-content ul.social-media {
+footer div.footer-content div.main-info-footer div.icon-and-social ul.social-media {
     display: flex;
     gap: 10px;
     margin-bottom: 0px;
 }
 
-footer div.footer-content ul.social-media img {
+footer div.footer-content div.main-info-footer div.icon-and-social ul.social-media img {
     width: 20px;
     height: 20px;
 }
 
-footer div.footer-content ul.contacts {
+footer div.footer-content div.main-info-footer div.contacts ul.contacts {
     justify-content: unset;
     gap: 14px;
-    position: absolute;
-    left: 565px;
     margin-bottom: 0px;
 }
 
-footer div.footer-content ul.contacts li {
+footer div.footer-content div.main-info-footer div.contacts ul.contacts li {
     align-items: center;
     gap: 13px;
 }
 
-footer div.footer-content ul.contacts li a img {
+footer div.footer-content div.main-info-footer div.contacts ul.contacts li a img {
     width: 15px;
     height: 15px;
     margin-right: 0px;
@@ -1008,6 +1014,7 @@ footer div.footer-content ul.contacts li a img {
     }
     
     main section.section-1 div.section-content-1{
+      
         padding-left: 0px;
     }
     
@@ -1303,10 +1310,11 @@ footer div.footer-content ul.contacts li a img {
     main section.section-8 div.section-content-8 div.course-program-grid div.module img{
         width: 400px;
     }
-    
-    main section.section-8 div.section-content-8 div.course-program-grid div.module:hover{
+
+    main section.section-8 div.section-content-8 div.course-program-grid div.module:hover {
         transform: translateY(-25px);
     }
+    
     
     
     /*    SECTION-9    */
@@ -1433,22 +1441,25 @@ footer div.footer-content ul.contacts li a img {
         gap: 30px;
         max-width: 1440px;
         margin: auto;
-        position: relative;
-        
+    }
+
+    footer div.footer-content div.main-info-footer {
+        display: flex;
+        gap: 60%
     }
     
-    footer div.footer-content img {
+    footer div.footer-content div.main-info-footer div.icon-and-social img {
         width: 115px;
         height: 68px;
     }
     
-    footer div.footer-content ul.social-media {
+    footer div.footer-content div.main-info-footer div.icon-and-social ul.social-media {
         display: flex;
         gap: 18px;
         margin-bottom: 0px;
     }
     
-    footer div.footer-content ul.social-media li a img {
+    footer div.footer-content div.main-info-footer div.icon-and-social ul.social-media li a img {
         width: 35px;
         height: 35px;
     }
@@ -1456,29 +1467,28 @@ footer div.footer-content ul.contacts li a img {
         margin-top: 146px;
         font-size: 18px;  
         height: 18.25px;
+
     }
     
-    footer div.footer-content ul.contacts {
+    footer div.footer-content div.main-info-footer div.contacts ul.contacts {
         justify-content: unset;
         gap: 14px;
-        position: absolute;
-        left: 900px;
         margin-bottom: 0px;
     }
     
-    footer div.footer-content ul.contacts li {
+    footer div.footer-content div.main-info-footer div.contacts ul.contacts li {
         align-items: center;
         gap: 18px;
     }
     
-    footer div.footer-content ul.contacts li img {
+    footer div.footer-content div.main-info-footer div.contacts ul.contacts li img {
         width: 27px;
         height: 27px;
         margin-right: 0px;
         align-self: unset;
     }
 
-    footer div.footer-content ul.contacts li p{
+    footer div.footer-content div.main-info-footer div.contacts ul.contacts li p{
         font-size: 25px;
         line-height: 25px;
     }
@@ -1488,5 +1498,7 @@ footer div.footer-content ul.contacts li a img {
         height: 18px;
         align-self: unset;
     }
+    
+    
     
     }
